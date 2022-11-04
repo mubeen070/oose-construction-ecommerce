@@ -1,7 +1,7 @@
 #Project Name:  Construction Material and Equipment Store
 
 ##Group Members:
-  1. Mubeen Khalid (SP21-BSE-015) 
+  1. Mubeen Khalid (SP21-BSE-015) (Leader)
   2. Mugheer Islam Khattak (SP21-BSE-017)
   3. Zain (FA19-BSE-082)
   
