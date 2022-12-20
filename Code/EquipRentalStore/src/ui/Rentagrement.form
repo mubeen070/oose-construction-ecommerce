@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane2">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JEditorPane" name="jEditorPane1">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Menu class="javax.swing.JMenuBar" name="jMenuBar1">
+      <SubComponents>
+        <Menu class="javax.swing.JMenu" name="jMenu1">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Construtease"/>
+          </Properties>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu2">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Rent Agreement"/>
+          </Properties>
+        </Menu>
+      </SubComponents>
+    </Menu>
+  </NonVisualComponents>
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="menuBar" type="java.lang.String" value="jMenuBar1"/>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" max="32767" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+              <Component id="jCheckBox2" min="-2" pref="190" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="94" max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField1" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="59" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+              <Component id="jScrollPane1" pref="301" max="32767" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jCheckBox2" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="jTextField1" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
+              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jCheckBox1"/>
+      </Properties>
+    </Component>
+    <Container class="javax.swing.JScrollPane" name="jScrollPane1">
+      <AuxValues>
+        <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
+      </AuxValues>
+
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents>
+        <Component class="javax.swing.JTextArea" name="jTextArea1">
+          <Properties>
+            <Property name="columns" type="int" value="20"/>
+            <Property name="rows" type="int" value="5"/>
+            <Property name="text" type="java.lang.String" value="EQUIPMENT RENTAL AGREEMENT&#xa;&#xa;I. THE PARTIES. This Equipment Rental Agreement (&#x201c;Agreement&#x201d;) is made on this [DATE], by and between:&#xa;&#xa;Lessor: [LESSOR&apos;S NAME] with a mailing address of [LESSOR&apos;S MAILING ADDRESS] (&#x201c;Lessor&#x201d;), and&#xa;&#xa;Lessee: [LESSEE&apos;S NAME] with a mailing address of [LESSEE&apos;S MAILING ADDRESS] (&#x201c;Lessee&#x201d;).&#xa;&#xa;Lessor and Lessee are each referred to herein as a &#x201c;Party&#x201d; and collectively as the &quot;Parties.&quot;&#xa;&#xa;II. EQUIPMENT DESCRIPTION. The Lessor hereby leases to Lessee the following equipment: [DESCRIPTION OF EQUIPMENT]&#xa;&#xa;III.&#xa;&#xa;Hereinafter known as the &#x201c;Equipment.&#x201d;&#xa;&#xa;IV. LEASE TYPE. This Agreement shall be considered a: (check one)&#xa;&#xa;&#x2610; - Fixed Lease. The Lessee shall lease the Equipment starting on [START DATE], and end on [END DATE] (&#x201c;Lease Term&#x201d;). At the end of the Lease Term and no renewal is made, the Lessee: (check one)&#xa;&#xa;&#x2610; - May continue to lease the Equipment under the same terms of this Agreement under a month-to-month arrangement.&#xa;&#xa;&#x2610; - Must return the Equipment to the Lessor.&#xa;&#xa;&#x2610; - Month-to-Month Lease. The Lessee shall be allowed to lease the Equipment on a month-to-month arrangement starting on [START DATE], and ending upon notice of [#] days from either Party to the other Party (&#x201c;Lease Term&#x201d;).&#xa;&#xa;V. RENT. The Lessee agrees to pay the Lessor $[RENT AMOUNT] for leasing the Equipment (&#x201c;Rent&#x201d;) that shall be paid: (check one)&#xa;&#xa;&#x2610; - For the Total Amount.&#xa;&#xa;&#x2610; - per Month.&#xa;&#xa;&#x2610; - per Week&#xa;&#xa;&#x2610; - per Day&#xa;&#xa;&#x2610; - Other. [OTHER]&#xa;&#xa;VI. RENT INSTRUCTIONS. Rent shall be paid by the Lessee to the Lessor in the following manner: [RENT PAYMENT INSTRUCTIONS]&#xa;&#xa;VII. LATE CHARGES. If any amount of Rent is late under this Agreement of more than [#] day(s) late, the Lessee will be obligated to pay a late fee of $[LATE CHARGE FEE] for each:&#xa;&#xa;&#x2610; - Occurrence that Rent is Late&#xa;&#xa;&#x2610; - Day that Rent is late.&#xa;&#xa;&#x2610; - Other. [OTHER]&#xa;&#xa;VIII. NON-SUFFICIENT FUNDS. The Lessee shall be charged $[NSF FEE] for each check that is returned to the Lessor for lack of sufficient funds.&#xa;&#xa;IX. SECURITY DEPOSIT. Prior to taking possession of the Equipment, the Lessee shall:&#xa;&#xa;&#x2610; - Be required to pay a deposit. The Lessee will be obligated to pay $[SECURITY DEPOSIT AMOUNT] (&#x201c;Security Deposit&#x201d;) for the performance by the Lessee under this Agreement for damages caused by the Lessee or Lessee&#x2019;s agents to the Equipment during the Lease Term. In addition, the Security Deposit may be applied to any amount owed by the Lessee to the Lessor.&#xa;&#xa;&#x2610; - NOT be required to pay a deposit (&#x201c;Security Deposit&#x201d;).&#xa;&#xa;X. DELIVERY OF EQUIPMENT. The delivery of the Equipment to the Lessee at the start of the Lease Term and returning to the Lessor at the end of the Lease Term shall be the responsibility of the: (check one)&#xa;&#xa;&#x2610; - Lessor&#xa;&#xa;&#x2610; - Lessee&#xa;&#xa;&#x2610; - Shared between the Parties.&#xa;&#xa;XI. OPTION TO PURCHASE. During the Lease Term, the Lessee shall: (check one):&#xa;&#xa;&#x2610; - Have the option to purchase the Equipment in its entirety for $[PURCHASE PRICE]. After payment has been made, title and possession shall revert immediately to the Lessee.&#xa;&#xa;&#x2610; - NOT have the option to purchase the Equipment.&#xa;&#xa;XII. REPAIRS AND MAINTENANCE. If for any reason the Equipment shall need repairs or maintenance due to wear-and-tear, the following Party shall be responsible: (check one)&#xa;&#xa;&#x2610; - Lessor&#xa;&#xa;&#x2610; - Lessee&#xa;&#xa;&#x2610; - Shared between the Parties.&#xa;&#xa;XIII. INSURANCE REQUIREMENT. The Lessor shall require that the Lessee: (check one)&#xa;&#xa;&#x2610; - Have insurance of the following types in order to rent the Equipment: (check all that apply)&#xa;&#xa;&#x2610; - Disability Insurance. The Lessee shall be required to maintain liability insurance of at least $[ENTER AMOUNT] for workers and other persons that may be operating, handling, or transporting the Equipment during the Lease Term. Such insurance is intended to indemnify and hold harmless the Lessor from any and all wrongdoing in connection with the injury of any person in the operation of the Equipment.&#xa;&#xa;&#x2610; - Casualty Insurance. The Lessee shall be required to insure the Equipment in an amount of at least $[ENTER AMOUNT] for its damage or replacement.&#xa;&#xa;&#x2610; - Other. [ENTER OTHER INSURANCE]&#xa;&#xa;&#x2610; - NOT be required to have or hold insurance on the Equipment. Although, the Lessor shall be held harmless and indemnified from any and all wrongdoing in connection with any injury of any person in the operation of the Equipment.&#xa;&#xa;XIV. ACCEPTANCE OF EQUIPMENT. The Lessee shall inspect each item and part of the Equipment upon delivery and pursuant to this Agreement. The Lessee shall have twenty-four (24) hours from the delivery date to inform the Lessor of any discrepancies. If for any reason the Lessee claims the Equipment was not the same as described under this Agreement, the Lessee shall be able to return the Equipment and obtain a full refund for any Rent, Security Deposit, and any other payments made.&#xa;&#xa;XV. NO WARRANTY. The Lessor makes no warranties, expressed or implied, as to the equipment leased. The Lessee assumes responsibility for the condition of the Equipment.&#xa;&#xa;XVI. RISK OF LOSS OR DAMAGE. The Lessee assumes all risk of loss or damage to the Equipment from any cause and agrees to return it to the Lessor in the condition received, with the exception of wear and tear, unless otherwise provided in this Agreement.&#xa;&#xa;a.) Damaged or Lost Equipment. Unless otherwise provided in this Agreement, if the equipment is damaged or lost, the Lessor shall have the option of requiring the Lessee to either repair the Equipment to a state of good working order or to replace the Equipment with like-equipment and in equal condition. The final decision for approval of any lost or damaged Equipment will be ultimately up to the Lessor.&#xa;&#xa;XVII. TAXES AND FEES. During the Lease Term, the Lessee shall be responsible and be required to pay any applicable taxes, assessments, licenses,&#xa;&#xa;registration, or any other fees associated with the handling and operation of the Equipment.&#xa;&#xa;XVIII. DEFAULT. The occurrence of any of the following shall constitute a default under this Agreement:&#xa;&#xa;a.) Failure of Payment. The failure of the Lessee to make a required payment under this Agreement;&#xa;&#xa;b.) Violation of Agreement. The violation of any provision of this Agreement that is not corrected within five (5) business days after written notice has been received;&#xa;&#xa;c.) Bankruptcy. The insolvency or bankruptcy of the Lessee; and&#xa;&#xa;d.) Seizure. The subjection of any of the Lessee&#x2019;s property to any levy, seizure, assignment, application, or sale for or by any creditor or government agency.&#xa;&#xa;XIX. RIGHTS UNDER DEFAULT. If the Lessee shall default under this Agreement, and without notice to or demand on the Lessee, the Lessor may take possession of the Equipment as provided by law with the right to deduct the costs of recovery, including any attorney&#x2019;s fees and legal costs, in addition to any repair or other costs to obtain the Equipment and bring to the same condition as the Lessee received upon initial delivery.&#xa;&#xa;XX. ASSIGNMENT. The Lessee is strictly prohibited from assigning or subletting the Equipment in any manner unless written consent is given by the Lessor. In addition, the Equipment may not be used by any person or associate other than the Lessee and their agents, employees, and subcontractors.&#xa;&#xa;XXI. SEVERABILITY. If any portion of this Agreement shall be held invalid or unenforceable for any reason, the remaining provisions shall continue to be valid and enforceable. If a court finds that any provision of this Agreement is invalid or unenforceable, but that by limiting such provision it would become valid and enforceable, then such provision shall be deemed to be written, construed, and enforced as so limited.&#xa;&#xa;XXII. GOVERNING LAW. This Agreement shall be construed and governed in accordance with the laws located in the State of [STATE].&#xa;&#xa;XXIII. ENTIRE AGREEMENT. This Agreement constitutes the entire agreement between the Parties. No modification or amendment of this Agreement shall be effective unless in writing and signed by both Parties. This Agreement replaces any and all prior agreements made between the Parties.&#xa;&#xa;XXIV. EXECUTION. Lessee and Lessor each represent and warrant to the other that each person executing this Agreement on behalf of each party is duly authorized to execute and deliver this Agreement on behalf of that party."/>
+          </Properties>
+        </Component>
+      </SubComponents>
+    </Container>
+    <Component class="javax.swing.JCheckBox" name="jCheckBox2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="I accrept term and conditions."/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jCheckBox2ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Security amount to be paid:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="jTextField1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Security amount"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextField1ActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="jButton1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Proceed to payment"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
