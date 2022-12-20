@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1010867421416",
+    "project_id": "material-renting",
+    "storage_bucket": "material-renting.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1010867421416:android:b75186770cae1a117b095d",
+        "android_client_info": {
+          "package_name": "com.example.construction_materials_renting_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1010867421416-9p5n9bgp5718allgs8tnjch08in94i5g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5Ar192GYg_nVvLZehqMxbpm2CWF4CGYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1010867421416-9p5n9bgp5718allgs8tnjch08in94i5g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
