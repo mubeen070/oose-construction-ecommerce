@@ -9,6 +9,7 @@ package ui;
  *
  * @author sp21-bse-015
  */
+import model.dto.ItemsDTO;
 public class Add extends javax.swing.JFrame {
 
     /**
@@ -77,7 +78,7 @@ public class Add extends javax.swing.JFrame {
 
         jLabel10.setText("Name:");
 
-        jLabel13.setText("Genre:");
+        jLabel13.setText("Price");
 
         jButton1.setText("Upload");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -197,7 +198,11 @@ public class Add extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField12ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        ItemsDTO objItem = new ItemsDTO();
+        objItem.Id = jTextField12.getText();
+        objItem.name = jTextField13.getText();
+        objItem.stock = jTextField14.getText();
+        objItem.price = Integer.parseInt(jTextField14.getText());
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
