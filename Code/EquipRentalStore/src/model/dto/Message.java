@@ -6,7 +6,7 @@ package model.dto;
 
 /**
  *
- * @author Mukhtiar-HPC
+ * @author mubee
  */
 public class Message {
     public String Message;

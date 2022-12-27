@@ -6,8 +6,9 @@ package model.dto;
 
 /**
  *
- * @author Mukhtiar-HPC
+ * @author mubee
  */
+
 public enum MessageType {
     Information,
     Warning,
