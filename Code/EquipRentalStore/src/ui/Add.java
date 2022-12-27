@@ -10,13 +10,21 @@ package ui;
  * @author sp21-bse-015
  */
 import model.dto.ItemsDTO;
+import model.dto.Response;
+import models.OSSController;
+import model.dto.Response;
+
 public class Add extends javax.swing.JFrame {
 
+    OSSController objController;
+ EmployeesUI uiEmployees;
     /**
      * Creates new form Add
      */
     public Add() {
         initComponents();
+        this.uiEmployees = aThis;
+        this.objController = oController;
     }
 
     /**
@@ -203,6 +211,7 @@ public class Add extends javax.swing.JFrame {
         objItem.name = jTextField13.getText();
         objItem.stock = jTextField14.getText();
         objItem.price = Integer.parseInt(jTextField14.getText());
+        Response objResponse = objController.addItems(objItem);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
