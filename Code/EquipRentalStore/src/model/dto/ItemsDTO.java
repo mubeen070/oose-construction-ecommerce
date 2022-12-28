@@ -12,5 +12,5 @@ public class ItemsDTO {
     public String Id;
     public String name;
     public String stock;
-    public int price;
+    public String desc;
 }

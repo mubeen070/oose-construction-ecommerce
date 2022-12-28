@@ -15,10 +15,10 @@ import model.validator.CommonValidator;
  *
  * @author mubee
  */
-public class OSSController {
+public class Controller {
     DALManager objDAL;
-    public OSSController(){
-    objDAL = SMSFactory.getInstanceOfDALManager();
+    public Controller(){
+    objDAL = ProjCreator.getInstanceOfDALManager();
     }
 
     public ArrayList<ItemsDTO> viewEmployees(String searchKey) {
@@ -26,7 +26,7 @@ public class OSSController {
     }
 
     public Response addItems(ItemsDTO objEmp) {
-        Response objResponse = SMSFactory.getResponseInstance();
+        Response objResponse = ProjCreator.getResponseInstance();
         CommonValidator.validateEmployee(objEmp,objResponse);
         if(objResponse.isSuccessfull()){
             objDAL.saveItem(objEmp,objResponse);

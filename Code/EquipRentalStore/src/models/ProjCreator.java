@@ -9,19 +9,20 @@ import dal.DALManager;
 import dal.RecordsMapper;
 import model.dto.Response;
 import dal.RecordsAdder;
+import dal.RecordsModifier;
 
 /**
  *
  * @author mubee
  */
-public class SMSFactory {
+public class ProjCreator {
 
     static DALManager getInstanceOfDALManager() {
         return new DALManager(new RecordsMapper());
     }
 
-    public static OSSController getInstanceOfSMSController() {
-        return new OSSController();
+    public static Controller getInstanceOfSMSController() {
+        return new Controller();
     }
 
     static Response getResponseInstance() {
@@ -31,5 +32,7 @@ public class SMSFactory {
     public static RecordsAdder getInstanceOfAdder() {
         return new RecordsAdder();
     }
-
+    public static RecordsModifier getInstanceOfModifier() {
+        return new RecordsModifier();
+    }
 }

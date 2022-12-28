@@ -19,18 +19,17 @@ import model.dto.Response;
 public class RecordsAdder {
 
     void saveEmployee(ItemsDTO objItem, Response objResponse, Connection dbConnection) {
-        try{
-            PreparedStatement p = dbConnection.prepareStatement("INSERT INTO EMployees (FirstName,LastName,Title) VALUES (?,?,?);");
+        try {
+            PreparedStatement p = dbConnection.prepareStatement("INSERT INTO items (name,stock) VALUES (?,?);");
             p.setString(1, objItem.name);
-            p.setString(2, objItem.name);
-            p.setString(3, objItem.stock);
+            p.setString(2, objItem.stock);
             int rowsInserted = p.executeUpdate();
-            if(rowsInserted > 0){
+            if (rowsInserted > 0) {
                 objResponse.messagesList.add(new Message("Employee added successfully.", MessageType.Information));
             }
-        }catch(SQLException e){
+        } catch (SQLException e) {
             objResponse.messagesList.add(new Message("Ooops! Failed to create employee, Please contact support that there an issue while saving new employee.", MessageType.Error));
-            objResponse.messagesList.add(new Message(e.getMessage() + "\n Stack Track:\n"+e.getStackTrace(), MessageType.Exception));
+            objResponse.messagesList.add(new Message(e.getMessage() + "\n Stack Track:\n" + e.getStackTrace(), MessageType.Exception));
         }
     }
 

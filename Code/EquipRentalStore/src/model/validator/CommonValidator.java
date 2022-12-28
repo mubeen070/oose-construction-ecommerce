@@ -16,8 +16,8 @@ import model.dto.Response;
 public class CommonValidator {
 
     public static void validateEmployee(ItemsDTO objEmp, Response objResponse) {
-        if(objEmp.name == null || objEmp.Id.length() < 3){
-            objResponse.messagesList.add(new Message("Name is not valid, Provide valid first name with at least 3 characters.",MessageType.Error));
+        if(objEmp.name == null || objEmp.Id.length() < 3 || objEmp.stock == null || objEmp.desc == null){
+            objResponse.messagesList.add(new Message("Provide valid details in text fields.",MessageType.Error));
         }
         // Todo validate the rest
     }

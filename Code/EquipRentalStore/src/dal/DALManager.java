@@ -8,7 +8,7 @@ package dal;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import models.SMSFactory;
+import models.ProjCreator;
 import model.dto.ItemsDTO;
 import model.dto.Message;
 import model.dto.MessageType;
@@ -16,25 +16,27 @@ import model.dto.Response;
 
 /**
  *
- * @author mubee
+ * @author Mukhtiar
  */
 public class DALManager {
 
-    MySqlConnection mysql;
+    IConnection objConnection;
     DBReader objReader;
     RecordsMapper objMapper;
     RecordsAdder objAdder;
+    RecordsModifier objModifier;
 
     public DALManager(RecordsMapper mapper) {
-        mysql = new MySqlConnection();
+        objConnection = new MySqlConnection("/localhost/", "Northwind", "root", "root");
         objReader = new DBReader();
-        objAdder = SMSFactory.getInstanceOfAdder();
+        objAdder = ProjCreator.getInstanceOfAdder();
         this.objMapper = mapper;
-//    objModifier = SMSFactory.getInstanceOfModifier();
+        objModifier = ProjCreator.getInstanceOfModifier();
     }
 
     public ArrayList<ItemsDTO> getEmployeesList(String searchKey) {
-        Connection dbConnection = mysql.mysql();
+
+        Connection dbConnection = objConnection.getConnection();
         String viewEmployeesQuery = "Select * from Employees";
         if (searchKey == null || searchKey.length() > 0) {
             viewEmployeesQuery += " where FirstName LIKE '%" + searchKey + "%' OR LastName LIKE '%" + searchKey + "%' OR Title LIKE '%" + searchKey + "%';";
@@ -43,14 +45,26 @@ public class DALManager {
         return objMapper.getEmployees(rs);
     }
 
-    public void saveItem(ItemsDTO objItem, Response objResponse) {
+    public void saveEmployee(ItemsDTO objEmp, Response objResponse) {
         try {
             Connection dbConnection = objConnection.getConnection();
-            objAdder.saveEmployee(objItem, objResponse, dbConnection);
+            objAdder.saveEmployee(objEmp, objResponse, dbConnection);
         } catch (Exception e) {
             objResponse.messagesList.add(new Message("Ooops! Failed to create employee, Please contact support that there an issue while saving new employee.", MessageType.Error));
             objResponse.messagesList.add(new Message(e.getMessage() + "\n Stack Track:\n" + e.getStackTrace(), MessageType.Exception));
         }
+    }
+
+    public Response deleteEmployee(String selectedId, Response objResponse) {
+        try {
+            Connection dbConnection = objConnection.getConnection();
+            objModifier.deleteEmployee(selectedId, objResponse, dbConnection);
+            return objResponse;
+        } catch (Exception e) {
+            objResponse.messagesList.add(new Message("Ooops! Failed to delete employee, Please contact support that there an issue while saving new employee.", MessageType.Error));
+            objResponse.messagesList.add(new Message(e.getMessage() + "\n Stack Track:\n" + e.getStackTrace(), MessageType.Exception));
+        }
+        return null;
     }
 
 }

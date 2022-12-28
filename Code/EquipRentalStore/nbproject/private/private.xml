@@ -3,10 +3,19 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/Add.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/ItemsDTO.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/MessageType.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/models/SMSFactory.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/MySqlConnection.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/RecordsModifier.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/models/OSSController.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/RecordsAdder.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/CommonHandler.java</file>
             <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/Message.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/RecordsMapper.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/Dashboard.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/AddItemsUI.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/ViewItemsUI.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/Response.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/MessageType.java</file>
         </group>
     </open-files>
 </project-private>

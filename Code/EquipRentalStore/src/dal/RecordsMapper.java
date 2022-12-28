@@ -17,19 +17,18 @@ public class RecordsMapper {
 
     ArrayList<ItemsDTO> getEmployees(ResultSet rs) {
         ArrayList<ItemsDTO> emplist = new ArrayList<>();
-        try{
-        while (rs.next())
-            {
-                ItemsDTO objItem=new ItemsDTO();                
-                objItem.Id=rs.getString(1);
-                objItem.name= rs.getString(3);
-                objItem.stock =rs.getString(2);
-                objItem.price = Integer.parseInt(rs.getString(8));                  
+        try {
+            while (rs.next()) {
+                ItemsDTO objItem = new ItemsDTO();
+                objItem.Id = rs.getString(1);
+                objItem.name = rs.getString(3);
+                objItem.stock = rs.getString(2);
+                objItem.desc = rs.getString(8);
                 emplist.add(objItem);
             }
-        }catch (Exception e){
+        } catch (Exception e) {
         }
         return emplist;
     }
-    
+
 }
