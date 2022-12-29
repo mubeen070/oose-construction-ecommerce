@@ -25,10 +25,10 @@ public class RecordsAdder {
             p.setString(2, objItem.stock);
             int rowsInserted = p.executeUpdate();
             if (rowsInserted > 0) {
-                objResponse.messagesList.add(new Message("Employee added successfully.", MessageType.Information));
+                objResponse.messagesList.add(new Message("Item added successfully.", MessageType.Information));
             }
         } catch (SQLException e) {
-            objResponse.messagesList.add(new Message("Ooops! Failed to create employee, Please contact support that there an issue while saving new employee.", MessageType.Error));
+            objResponse.messagesList.add(new Message("Ooops! Failed to create item, Please contact support that there an issue while saving new employee.", MessageType.Error));
             objResponse.messagesList.add(new Message(e.getMessage() + "\n Stack Track:\n" + e.getStackTrace(), MessageType.Exception));
         }
     }

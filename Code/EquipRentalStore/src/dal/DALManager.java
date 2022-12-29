@@ -27,17 +27,22 @@ public class DALManager {
     RecordsModifier objModifier;
 
     public DALManager(RecordsMapper mapper) {
-        objConnection = new MySqlConnection("/localhost/", "Northwind", "root", "root");
-        objReader = new DBReader();
-        objAdder = ProjCreator.getInstanceOfAdder();
-        this.objMapper = mapper;
-        objModifier = ProjCreator.getInstanceOfModifier();
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            objConnection = new MySqlConnection("localhost", "northwind", "root", "Tucky32145");
+            objReader = new DBReader();
+            objAdder = ProjCreator.getInstanceOfAdder();
+            this.objMapper = mapper;
+            objModifier = ProjCreator.getInstanceOfModifier();
+        } catch (Exception e) {
+            System.out.println(e.getStackTrace());
+        }
     }
 
     public ArrayList<ItemsDTO> getEmployeesList(String searchKey) {
 
         Connection dbConnection = objConnection.getConnection();
-        String viewEmployeesQuery = "Select * from Employees";
+        String viewEmployeesQuery = "Select * from items";
         if (searchKey == null || searchKey.length() > 0) {
             viewEmployeesQuery += " where FirstName LIKE '%" + searchKey + "%' OR LastName LIKE '%" + searchKey + "%' OR Title LIKE '%" + searchKey + "%';";
         }

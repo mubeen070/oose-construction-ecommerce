@@ -18,7 +18,7 @@ public class MySqlConnection implements IConnection {
     private String dbName;
     private String dbUserName;
     private String dbUserPassword;
-    
+
     MySqlConnection(String sName, String dbName, String userId, String userPass) {
         this.serverName = sName;
         this.dbName = dbName;
@@ -29,12 +29,12 @@ public class MySqlConnection implements IConnection {
     @Override
     public Connection getConnection() {
         try {
-            return DriverManager.getConnection("jdbc:mysql://;databaseName="+this.dbName+";trustServerCertificate=true;", this.dbUserName,this.dbUserPassword);
-        }
-        catch (Exception e) {
+            Class.forName("com.mysql.jdbc.Driver");
+            return DriverManager.getConnection("jdbc:mysqlserver://;databaseName=" + this.dbName + ";trustServerCertificate=true;", this.dbUserName, this.dbUserPassword);
+        } catch (Exception e) {
             System.out.println("Error Trace in getConnection() : " + e.getMessage());
         }
         return null;
     }
-    
+
 }
