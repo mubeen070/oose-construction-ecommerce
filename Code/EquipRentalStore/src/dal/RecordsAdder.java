@@ -11,6 +11,7 @@ import model.dto.ItemsDTO;
 import model.dto.Message;
 import model.dto.MessageType;
 import model.dto.Response;
+import model.Creator;
 
 /**
  *
@@ -27,7 +28,7 @@ public class RecordsAdder {
             p.setString(4, objItem.price);
             int rowsInserted = p.executeUpdate();
             if (rowsInserted > 0) {
-                objResponse.messagesList.add(new Message("Item added successfully.", MessageType.Information));
+                objResponse.messagesList.add(Creator.getInstanceofMessage("Item added successfully.", MessageType.Information));
             }
         } catch (SQLException e) {
             objResponse.messagesList.add(new Message("Ooops! Failed to add", MessageType.Error));
