@@ -23,7 +23,7 @@ public class ItemsUI extends javax.swing.JFrame {
     Controller objController;
     DefaultTableModel dtm;
 
-    private void PopulateDataFromDatabase(ArrayList<EmployeeDTO> list) {
+    private void PopulateDataFromDatabase(ArrayList<ItemsDTO> list) {
         dtm = new DefaultTableModel();
         try {
             dtm.addColumn("Emp ID");

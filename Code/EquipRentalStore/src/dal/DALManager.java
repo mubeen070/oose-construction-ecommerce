@@ -10,6 +10,7 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import models.ProjCreator;
 import model.dto.ItemsDTO;
+import model.dto.Cartitems;
 import model.dto.Message;
 import model.dto.MessageType;
 import model.dto.Response;
@@ -28,8 +29,8 @@ public class DALManager {
 
     public DALManager(RecordsMapper mapper) {
         try {
-            Class.forName("com.mysql.jdbc.Driver");
-            objConnection = new MySqlConnection("localhost", "northwind", "root", "Tucky32145");
+           
+            objConnection = new sqlConnection("sa", "master", "sa", "root123");
             objReader = new DBReader();
             objAdder = ProjCreator.getInstanceOfAdder();
             this.objMapper = mapper;
@@ -39,6 +40,19 @@ public class DALManager {
         }
     }
 
+    
+        public ArrayList<Cartitems> getCarttemsList(String searchKey) {
+
+        Connection dbConnection = objConnection.getConnection();
+        String viewItemsQuery = "Select * from items";
+        if (searchKey == null || searchKey.length() > 0) {
+            viewItemsQuery += " where FirstName LIKE '%" + searchKey + "%' OR LastName LIKE '%" + searchKey + "%' OR Title LIKE '%" + searchKey + "%';";
+        }
+        ResultSet rs = objReader.getRecords(viewItemsQuery, dbConnection);
+        return objMapper.getCartitems(rs);
+    }
+        
+        
     public ArrayList<ItemsDTO> getEmployeesList(String searchKey) {
 
         Connection dbConnection = objConnection.getConnection();

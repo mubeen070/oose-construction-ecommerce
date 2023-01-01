@@ -7,6 +7,7 @@ package models;
 
 import dal.DALManager;
 import java.util.ArrayList;
+import model.dto.Cartitems;
 import model.dto.ItemsDTO;
 import model.dto.Response;
 import model.validator.CommonValidator;
@@ -30,6 +31,14 @@ public class Controller {
         CommonValidator.validateEmployee(objEmp,objResponse);
         if(objResponse.isSuccessfull()){
             objDAL.saveItem(objEmp,objResponse);
+        }
+        return objResponse;
+    }
+     public Response gorenting(Cartitems objcart) {
+        Response objResponse = ProjCreator.getResponseInstance();
+        CommonValidator.validateCart(objcart,objResponse);
+        if(objResponse.isSuccessfull()){
+           // objDAL.saveItem(objcart,objResponse);//
         }
         return objResponse;
     }
