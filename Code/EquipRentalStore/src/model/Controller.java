@@ -15,16 +15,16 @@ import model.validators.CommonValidator;
  *
  * @author mubee
  */
-public class OSSController {
+public class Controller {
 
     DALManager objDAL;
 
-    public OSSController() {
+    public Controller() {
         objDAL = Creator.getInstanceOfDALManager();
     }
 
     public ArrayList<ItemsDTO> viewItems(String searchKey) {
-        return objDAL.getItemsList(searchKey);
+        return objDAL.searchItemss(searchKey);
     }
 
     public Response addItems(ItemsDTO objItem) {

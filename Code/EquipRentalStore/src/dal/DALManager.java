@@ -51,7 +51,7 @@ public class DALManager {
         return objMapper.getCartitems(rs);
     }
 
-    public ArrayList<ItemsDTO> getItemsList(String searchKey) {
+    public ArrayList<ItemsDTO> searchItemss(String searchKey) {
 
         Connection dbConnection = objConnection.getConnection();
         String viewEmployeesQuery = "Select * from items";

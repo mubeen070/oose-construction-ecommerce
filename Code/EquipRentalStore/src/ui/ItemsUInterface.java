@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import model.OSSController;
+import model.Controller;
 import model.Creator;
 import model.dto.Response;
 
@@ -27,7 +27,7 @@ public class ItemsUInterface extends javax.swing.JFrame {
      * Creates new form ItemsUInterface
      */
     Dashboard objMainUI;
-    OSSController objController;
+    Controller objController;
 
     ItemsUInterface(Dashboard aThis) {
         initComponents();

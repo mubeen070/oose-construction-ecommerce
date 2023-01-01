@@ -25,8 +25,8 @@ public class Creator {
         return new DALManager(new RecordsMapper());
     }
 
-    public static OSSController getInstanceOfSMSController() {
-        return new OSSController();
+    public static Controller getInstanceOfSMSController() {
+        return new Controller();
     }
 
     public static Response getResponseInstance() {

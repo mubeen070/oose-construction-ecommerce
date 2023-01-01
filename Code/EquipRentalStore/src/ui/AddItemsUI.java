@@ -5,7 +5,7 @@
 package ui;
 
 
-import model.OSSController;
+import model.Controller;
 import model.dto.ItemsDTO;
 import model.dto.Response;
 
@@ -16,9 +16,9 @@ import model.dto.Response;
 public class AddItemsUI extends javax.swing.JFrame {
 
     ItemsUInterface uiItems;
-    OSSController objController;
+    Controller objController;
 
-    AddItemsUI(ItemsUInterface aThis, OSSController oController) {
+    AddItemsUI(ItemsUInterface aThis, Controller oController) {
         initComponents();
         this.uiItems = aThis;
         this.objController = oController;
