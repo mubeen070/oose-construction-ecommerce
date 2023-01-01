@@ -19,12 +19,12 @@ public class RecordsModifier {
 
     void deleteEmployee(String selectedId, Response objResponse, Connection dbConnection) {
         try{
-            PreparedStatement p;
-            p = dbConnection.prepareStatement("delete from items where id=?");
+            PreparedStatement p;// (FirstName,LastName,Title) VALUES (?,?,?);");
+            p = dbConnection.prepareStatement("delete from Items where item_id=?");
             p.setString(1, selectedId);
             int rowsInserted = p.executeUpdate();
             if(rowsInserted > 0){
-                objResponse.messagesList.add(new Message("Item deleted successfully.", MessageType.Information));
+                objResponse.messagesList.add(new Message("Employee deleted successfully.", MessageType.Information));
             }
         }catch(SQLException e){
             objResponse.messagesList.add(new Message("Ooops! Failed to create employee, Please contact support that there an issue while saving new employee.", MessageType.Error));

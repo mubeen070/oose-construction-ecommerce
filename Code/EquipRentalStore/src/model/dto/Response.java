@@ -6,6 +6,10 @@ package model.dto;
 
 import java.util.ArrayList;
 
+/**
+ *
+ * @author mubee
+ */
 public class Response {
     public ArrayList<Message> messagesList;
     public Response(){ 

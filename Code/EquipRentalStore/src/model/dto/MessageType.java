@@ -8,7 +8,6 @@ package model.dto;
  *
  * @author mubee
  */
-
 public enum MessageType {
     Information,
     Warning,

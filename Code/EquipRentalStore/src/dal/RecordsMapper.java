@@ -6,6 +6,7 @@
 package dal;
 
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 import model.dto.ItemsDTO;
 import model.dto.Cartitems;
@@ -16,23 +17,23 @@ import model.dto.Cartitems;
  */
 public class RecordsMapper {
 
-    ArrayList<ItemsDTO> getEmployees(ResultSet rs) {
-        ArrayList<ItemsDTO> emplist = new ArrayList<>();
+    ArrayList<ItemsDTO> getItems(ResultSet rs) {
+        ArrayList<ItemsDTO> itemlist = new ArrayList<>();
         try {
             while (rs.next()) {
                 ItemsDTO objItem = new ItemsDTO();
                 objItem.Id = rs.getString(1);
-                objItem.name = rs.getString(3);
-                objItem.stock = rs.getString(2);
-                objItem.desc = rs.getString(8);
-                emplist.add(objItem);
+                objItem.name = rs.getString(2);
+                objItem.desc = rs.getString(3);
+                objItem.price = rs.getString(4);
+                itemlist.add(objItem);
             }
-        } catch (Exception e) {
+        } catch (SQLException e) {
         }
-        return emplist;
+        return itemlist;
     }
-    
-        ArrayList<Cartitems> getCartitems(ResultSet rs) {
+
+    ArrayList<Cartitems> getCartitems(ResultSet rs) {
         ArrayList<Cartitems> emplist = new ArrayList<>();
         try {
             while (rs.next()) {
@@ -40,7 +41,7 @@ public class RecordsMapper {
                 objItem.Id = rs.getString(1);
                 objItem.name = rs.getString(3);
                 objItem.quantity = rs.getInt(2);
-             
+
                 emplist.add(objItem);
             }
         } catch (Exception e) {

@@ -5,7 +5,7 @@
  */
 package dal;
 
-import java.sql.*;
+import java.sql.Connection;
 
 /**
  *
@@ -13,6 +13,7 @@ import java.sql.*;
  */
 public interface IConnection {
 
+
     public Connection getConnection();
-    
+
 }

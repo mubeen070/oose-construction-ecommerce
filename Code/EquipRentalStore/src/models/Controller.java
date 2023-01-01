@@ -23,7 +23,7 @@ public class Controller {
     }
 
     public ArrayList<ItemsDTO> viewEmployees(String searchKey) {
-        return objDAL.getEmployeesList(searchKey);
+        return objDAL.getItemList(searchKey);
     }
 
     public Response addItems(ItemsDTO objEmp) {

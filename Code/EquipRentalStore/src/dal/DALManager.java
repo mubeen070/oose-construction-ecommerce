@@ -8,7 +8,7 @@ package dal;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import models.ProjCreator;
+import model.Creator;
 import model.dto.ItemsDTO;
 import model.dto.Cartitems;
 import model.dto.Message;
@@ -29,19 +29,18 @@ public class DALManager {
 
     public DALManager(RecordsMapper mapper) {
         try {
-           
-            objConnection = new sqlConnection("sa", "master", "sa", "root123");
+
+            objConnection = new SQLConnection("localhost", "master", "sa", "root123");
             objReader = new DBReader();
-            objAdder = ProjCreator.getInstanceOfAdder();
+            objAdder = Creator.getInstanceOfAdder();
             this.objMapper = mapper;
-            objModifier = ProjCreator.getInstanceOfModifier();
+            objModifier = Creator.getInstanceOfModifier();
         } catch (Exception e) {
             System.out.println(e.getStackTrace());
         }
     }
 
-    
-        public ArrayList<Cartitems> getCarttemsList(String searchKey) {
+    public ArrayList<Cartitems> getCarttemsList(String searchKey) {
 
         Connection dbConnection = objConnection.getConnection();
         String viewItemsQuery = "Select * from items";
@@ -51,30 +50,29 @@ public class DALManager {
         ResultSet rs = objReader.getRecords(viewItemsQuery, dbConnection);
         return objMapper.getCartitems(rs);
     }
-        
-        
-    public ArrayList<ItemsDTO> getEmployeesList(String searchKey) {
+
+    public ArrayList<ItemsDTO> getItemsList(String searchKey) {
 
         Connection dbConnection = objConnection.getConnection();
         String viewEmployeesQuery = "Select * from items";
         if (searchKey == null || searchKey.length() > 0) {
-            viewEmployeesQuery += " where FirstName LIKE '%" + searchKey + "%' OR LastName LIKE '%" + searchKey + "%' OR Title LIKE '%" + searchKey + "%';";
+            viewEmployeesQuery += " where item_id LIKE '%" + searchKey + "%' OR item_name LIKE '%" + searchKey + "%';";
         }
         ResultSet rs = objReader.getRecords(viewEmployeesQuery, dbConnection);
-        return objMapper.getEmployees(rs);
+        return objMapper.getItems(rs);
     }
 
-    public void saveEmployee(ItemsDTO objEmp, Response objResponse) {
+    public void saveItems(ItemsDTO objEmp, Response objResponse) {
         try {
             Connection dbConnection = objConnection.getConnection();
-            objAdder.saveEmployee(objEmp, objResponse, dbConnection);
+            objAdder.addItems(objEmp, objResponse, dbConnection);
         } catch (Exception e) {
             objResponse.messagesList.add(new Message("Ooops! Failed to create employee, Please contact support that there an issue while saving new employee.", MessageType.Error));
             objResponse.messagesList.add(new Message(e.getMessage() + "\n Stack Track:\n" + e.getStackTrace(), MessageType.Exception));
         }
     }
 
-    public Response deleteEmployee(String selectedId, Response objResponse) {
+    public Response deleteItems(String selectedId, Response objResponse) {
         try {
             Connection dbConnection = objConnection.getConnection();
             objModifier.deleteEmployee(selectedId, objResponse, dbConnection);
