@@ -4,24 +4,27 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/DBReader.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/SQLConnection.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/RecordsModifier.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/ItemsDTO.java</file>
             <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/Rentagrement.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/AddItemsUI.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/DALManager.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/Controller.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/Response.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/Message.java</file>
             <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/Delete.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/IConnection.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/ItemsUInterface.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/AddRecord.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/MessageType.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/SQLConnection.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/Dashboard.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/RecordsModifier.java</file>
             <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/Search.java</file>
             <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/CommonHandler.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/Creator.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/ItemsDTO.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/Message.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/ItemsUInterface.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/Dashboard.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/validators/CommonValidator.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/AddItemsUI.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/MapRecord.java</file>
             <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/ui/Update.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/Response.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/MessageType.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/dto/Cartitems.java</file>
-            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/dal/IConnection.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/Creator.java</file>
+            <file>file:/C:/OOSe/oose-construction-ecommerce/oose-construction-ecommerce/Code/EquipRentalStore/src/model/validators/CommonValidator.java</file>
         </group>
     </open-files>
 </project-private>
