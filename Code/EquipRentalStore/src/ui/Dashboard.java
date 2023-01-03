@@ -7,7 +7,7 @@ package ui;
 
 /**
  *
- * @author Mukhtiar
+ * @author mubee
  */
 import model.Creator;
 

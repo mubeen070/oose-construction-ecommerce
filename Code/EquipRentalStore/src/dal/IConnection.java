@@ -9,7 +9,7 @@ import java.sql.Connection;
 
 /**
  *
- * @author Mukhtiar
+ * @author mubee
  */
 public interface IConnection {
 

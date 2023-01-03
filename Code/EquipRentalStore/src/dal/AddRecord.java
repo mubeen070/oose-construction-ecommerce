@@ -17,7 +17,7 @@ import model.Creator;
  *
  * @author mubee
  */
-public class RecordsAdder {
+public class AddRecord {
 
     void addItems(ItemsDTO objItem, Response objResponse, Connection dbConnection) {
         try {
@@ -31,8 +31,8 @@ public class RecordsAdder {
                 objResponse.messagesList.add(Creator.getInstanceofMessage("Item added successfully.", MessageType.Information));
             }
         } catch (SQLException e) {
-            objResponse.messagesList.add(new Message("Ooops! Failed to add", MessageType.Error));
-            objResponse.messagesList.add(new Message(e.getMessage() + "\n Stack Track:\n" + e.getStackTrace(), MessageType.Exception));
+            objResponse.messagesList.add(Creator.getInstanceofMessage("Ooops! Failed to add", MessageType.Error));
+            objResponse.messagesList.add(Creator.getInstanceofMessage(e.getMessage() + "\n Stack Track:\n" + e.getStackTrace(), MessageType.Exception));
         }
     }
 

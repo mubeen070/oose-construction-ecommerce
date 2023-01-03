@@ -4,18 +4,13 @@
  */
 package ui;
 
-import java.util.ArrayList;
-import javax.swing.table.DefaultTableModel;
-import model.Creator;
-import model.dto.ItemsDTO;
+
 import model.dto.ItemsDTO;
 import java.util.ArrayList;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.Controller;
 import model.Creator;
-import model.dto.Response;
 
 /**
  *
@@ -47,7 +42,7 @@ public class ItemsUInterface extends javax.swing.JFrame {
             dtm.addColumn("Item ID");
             dtm.addColumn("Item Name");
             dtm.addColumn("Description");
-            dtm.addColumn("Price");
+            dtm.addColumn("Price ($)");
             for (ItemsDTO emp : list) {
                 Object[] rowData = Creator.getInstanceofObject(4);
                 rowData[0] = emp.Id;

@@ -15,7 +15,7 @@ import model.dto.Cartitems;
  *
  * @author mubee
  */
-public class RecordsMapper {
+public class MapRecord {
 
     ArrayList<ItemsDTO> getItems(ResultSet rs) {
         ArrayList<ItemsDTO> itemlist = new ArrayList<>();

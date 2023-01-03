@@ -17,17 +17,17 @@ import model.dto.Response;
 
 /**
  *
- * @author Mukhtiar
+ * @author mubee
  */
 public class DALManager {
 
     IConnection objConnection;
     DBReader objReader;
-    RecordsMapper objMapper;
-    RecordsAdder objAdder;
+    MapRecord objMapper;
+    AddRecord objAdder;
     RecordsModifier objModifier;
 
-    public DALManager(RecordsMapper mapper) {
+    public DALManager(MapRecord mapper) {
         try {
 
             objConnection = new SQLConnection("localhost", "master", "sa", "root123");

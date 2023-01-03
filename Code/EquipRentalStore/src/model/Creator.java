@@ -6,8 +6,8 @@
 package model;
 
 import dal.DALManager;
-import dal.RecordsAdder;
-import dal.RecordsMapper;
+import dal.AddRecord;
+import dal.MapRecord;
 import dal.RecordsModifier;
 import model.dto.Response;
 import model.dto.Message;
@@ -22,7 +22,7 @@ import ui.ItemsUInterface;
 public class Creator {
 
     public static DALManager getInstanceOfDALManager() {
-        return new DALManager(new RecordsMapper());
+        return new DALManager(new MapRecord());
     }
 
     public static Controller getInstanceOfSMSController() {
@@ -33,8 +33,8 @@ public class Creator {
         return new Response();
     }
 
-    public static RecordsAdder getInstanceOfAdder() {
-        return new RecordsAdder();
+    public static AddRecord getInstanceOfAdder() {
+        return new AddRecord();
     }
 
     public static RecordsModifier getInstanceOfModifier() {

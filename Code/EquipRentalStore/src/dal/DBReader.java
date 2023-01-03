@@ -12,7 +12,7 @@ import java.sql.Statement;
 
 /**
  *
- * @author Mukhtiar
+ * @author mubee
  */
 public class DBReader {
 

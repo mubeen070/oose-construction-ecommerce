@@ -24,8 +24,9 @@ public class CommonValidator {
         // Todo validate the rest
     }
 
-    public static void validateItems(ItemsDTO objEmp, Response objResponse) {
-        if (objEmp.name == null || objEmp.price == null || objEmp.Id == null) {
+    public static void validateItems(ItemsDTO objItem, Response objResponse) {
+        if (objItem.name == null || objItem.price == null || objItem.Id == null || objItem.desc
+                 == null) {
             objResponse.messagesList.add(Creator.getInstanceofMessage("Text Fields cant be null.", MessageType.Error));
         }
         // Todo validate the rest
