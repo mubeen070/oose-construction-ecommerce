@@ -12,8 +12,12 @@ import dal.RecordsModifier;
 import model.dto.Response;
 import model.dto.Message;
 import model.dto.MessageType;
+import model.validators.CommonValidator;
 import ui.Dashboard;
+import ui.AddItemsUI;
 import ui.ItemsUInterface;
+import model.dto.ItemsDTO;
+import ui.Delete;
 
 /**
  *
@@ -49,4 +53,19 @@ public class Creator {
         return new Message(errorMessage, messageType);
     }
 
+    public static CommonValidator getInstanceOf_Validator() {
+        return new CommonValidator();
+    }
+
+    public static ItemsDTO getInstanceOfItemsDTO() {
+        return new ItemsDTO();
+    }
+
+    public static Delete getInstanceOfDelete() {
+        return new Delete();
+    }
+
+    public static Object getInstanceOfAddItems(ItemsUInterface aThis, Controller objController) {
+        return new AddItemsUI(aThis, objController);
+    }
 }

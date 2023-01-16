@@ -22,5 +22,11 @@ public class CommonHandler {
                 ((JTextArea) uiComponent).setForeground(Color.RED);
             }
         }
+        if (objResponse.isSuccessfull()) {
+            if (uiComponent instanceof JTextArea) {
+                ((JTextArea) uiComponent).setText("Success!");
+                ((JTextArea) uiComponent).setForeground(Color.GREEN);
+            }
+        }
     }
 }

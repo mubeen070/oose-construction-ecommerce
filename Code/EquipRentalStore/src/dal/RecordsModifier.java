@@ -17,19 +17,19 @@ import model.dto.Response;
  */
 public class RecordsModifier {
 
-    void deleteEmployee(String selectedId, Response objResponse, Connection dbConnection) {
-        try{
-            PreparedStatement p;// (FirstName,LastName,Title) VALUES (?,?,?);");
+    void deleteItem(String selectedId, Response objResponse, Connection dbConnection) {
+        try {
+            PreparedStatement p;
             p = dbConnection.prepareStatement("delete from Items where item_id=?");
             p.setString(1, selectedId);
             int rowsInserted = p.executeUpdate();
-            if(rowsInserted > 0){
-                objResponse.messagesList.add(new Message("Employee deleted successfully.", MessageType.Information));
+            if (rowsInserted > 0) {
+                objResponse.messagesList.add(new Message("Item with id:" + selectedId + "has been deleted successfully.", MessageType.Information));
             }
-        }catch(SQLException e){
+        } catch (SQLException e) {
             objResponse.messagesList.add(new Message("Ooops! Failed to create employee, Please contact support that there an issue while saving new employee.", MessageType.Error));
-            objResponse.messagesList.add(new Message(e.getMessage() + "\n Stack Track:\n"+e.getStackTrace(), MessageType.Exception));
+            objResponse.messagesList.add(new Message(e.getMessage() + "\n Stack Track:\n" + e.getStackTrace(), MessageType.Exception));
         }
     }
-    
+
 }

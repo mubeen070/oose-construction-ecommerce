@@ -25,10 +25,22 @@ public class CommonValidator {
     }
 
     public static void validateItems(ItemsDTO objItem, Response objResponse) {
-        if (objItem.name == null || objItem.price == null || objItem.Id == null || objItem.desc
-                 == null) {
-            objResponse.messagesList.add(Creator.getInstanceofMessage("Text Fields cant be null.", MessageType.Error));
+        if (objItem.Id.compareTo("") == 0 && objItem.name.compareTo("") == 0 && objItem.desc.compareTo("") == 0 && objItem.price.compareTo("") == 0) {
+            objResponse.messagesList.add(Creator.getInstanceofMessage("Please Enter some data in the above boxes.", MessageType.Error));
+        } else {
+            if (objItem.Id == null) {
+                objResponse.messagesList.add(Creator.getInstanceofMessage("Id is not valid, Provide valid unique id.\n", MessageType.Error));
+            }
+            if (objItem.name == null || objItem.name.length() < 3) {
+                objResponse.messagesList.add(Creator.getInstanceofMessage("Name is not valid, Provide valid name with at least 3 characters.\n", MessageType.Error));
+            }
+            if (objItem.desc == null || objItem.desc.length() < 20) {
+                objResponse.messagesList.add(Creator.getInstanceofMessage("Desc Name is not valid, Provide a valid desc name with at least 20 characters.\n", MessageType.Error));
+            }
+            if (objItem.price == null || objItem.price.length() < 3) {
+                objResponse.messagesList.add(Creator.getInstanceofMessage("Price is not valid, Provide valid price.\n", MessageType.Error));
+            }
+            // Todo validate the rest
         }
-        // Todo validate the rest
     }
 }
